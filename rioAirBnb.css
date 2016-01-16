@@ -1,0 +1,42 @@
+.body{
+	font-family: Circular,"Helvetica Neue",Helvetica,Arial,sans-serif;
+	color: #565A5C;
+}
+
+.centered{
+	text-align: center;
+}
+
+.placeholder{
+	background-color: #AAAAAA;
+	height: 200px;
+	margin-top: 30px;
+	transition: background-color 0.5s ease;
+}
+.placeholder:hover{
+	background-color: #555555;
+}
+
+.placeholder:hover .catDescription{
+  visibility: visible;
+  opacity: 1;
+}
+
+
+.category{
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.catDescription{
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: visibility opacity 0.5s;
+}
+
+.footer{
+	background-color: #EEEEEE;
+}
