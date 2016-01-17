@@ -1,29 +1,28 @@
-.body{
+.body {
 	font-family: Circular,"Helvetica Neue",Helvetica,Arial,sans-serif;
 	color: #565A5C;
 }
 
-.centered{
+.centered {
 	text-align: center;
 }
 
-.placeholder{
-	background-color: #AAAAAA;
-	height: 200px;
+.placeholder {
+	background-color: rgba(0, 0, 0, 0.5);
+	height: 250px;
 	margin-top: 30px;
 	transition: background-color 0.5s ease;
 }
-.placeholder:hover{
-	background-color: #555555;
+.placeholder:hover {
+	background-color: rgba(0, 0, 0, 0.75);
 }
 
-.placeholder:hover .catDescription{
-  visibility: visible;
-  opacity: 1;
+.placeholder:hover .catDescription {
+ 	display: inline-block;
 }
 
-
-.category{
+.category {
+	color: #FFFFFF;
 	position: absolute;
     top: 50%;
     left: 50%;
@@ -31,12 +30,67 @@
     transform: translateX(-50%) translateY(-50%);
 }
 
-.catDescription{
-  visibility: hidden;
-  opacity: 0;
-  -webkit-transition: visibility opacity 0.5s;
+.catDescription {
+ 	display: none;
 }
 
-.footer{
+.footer {
+	height: 200px;
 	background-color: #EEEEEE;
+}
+
+.page-header {
+	border-bottom: 0px;
+}
+
+.page-logo {
+	max-height: 70px;
+}
+
+.section-header {
+	margin: 50px 0px 30px 0px;
+}
+
+.jumbotron {
+	color: #FFFFFF;
+	text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+	padding-top: 100px;
+	padding-bottom: 100px;
+	background: url("assets/jumbotronBackground.jpg");
+	background-size: cover;
+	background-position: 0% 60%;
+}
+
+.experiences {
+	margin-bottom: 0px;
+	margin-top: 100px;
+	padding-top: 150px;
+	padding-bottom: 150px;
+	background: url("assets/biking.jpg");
+	background-size: cover;
+}
+
+.btn-feature {
+	padding: 10px 20px;
+	background: #FF3036;
+	border-bottom: 2px solid #E00007;
+}
+
+.btn-feature:hover {
+	padding: 10px 20px;
+	background: #FF595E;
+	border-bottom: 2px solid #E00007;
+}
+
+.btn-feature:hover {
+	color: #FFFFFF;
+}
+
+.footer {
+	color: #FFFFFF;
+	background: #2B2D2E url("assets/footer-background.png");
+}
+
+hr {
+	border-color: #666666;
 }
